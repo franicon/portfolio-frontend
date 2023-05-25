@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import BannerComp from "@/components/BannerComp.vue";
+import ProjectsComp from "@/components/ProjectsComp.vue"
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <BannerComp/>
+  <ProjectsComp/>
 </template>
