@@ -5,7 +5,7 @@ let url = ref([
   {
     name: 'About',
     route: '/about',
-    is_active: false
+    active: false
   },
   {
     name: 'Projects',
@@ -33,7 +33,7 @@ function toggleActive(link: Link) {
   url.value.forEach((item) => {
     item["active"] = false
   });
-  link.active  = true
+  return link.active = true
 }
 
 function toggleMenu() {
@@ -50,7 +50,7 @@ function toggleMenu() {
         <div class=" mx-auto rounded-full bg-zinc-800 text-white w-96 p-3 drop-shadow-lg border border-gray-400 text-center ">
           <RouterLink
               :class="link.active ? 'font-semibold px-3': 'px-3 hover:text-zinc-200'"
-              @click="toggleActive(link.active)" v-for="link in url" :key="link.name" to="/">{{ link.name }}
+              @click="toggleActive(link)" v-for="link in url" :key="link.name" to="/">{{ link.name }}
           </RouterLink>
         </div>
       </div>
@@ -73,7 +73,7 @@ function toggleMenu() {
         <div class="flex flex-col mt-32  text-white">
           <RouterLink
               :class="link.active ? 'font-semibold my-5 text-white': ' my-5 hover:text-white'"
-              @click="toggleActive(link.actve); toggleMenu()" v-for="link in url" :key="link.name" to="/">{{ link.name }}
+              @click="toggleActive(link); toggleMenu()" v-for="link in url" :key="link.name" to="/">{{ link.name }}
           </RouterLink>
         </div>
       </div>
