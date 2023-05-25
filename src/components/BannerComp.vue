@@ -1,4 +1,4 @@
-<script setup></script>
+<script setup lang="tx"></script>
 
 <template>
   <header>
@@ -16,13 +16,13 @@
               px-2 py-3 w-52 text-center cursor-pointer hover:bg-zinc-700 transition-colors
               ease-in-out shadow-lg flex justify-center items-center">
             <div class="pr-2">About Me</div> 
-            <div class=""><img src="src/assets/images/forword.png"></div>
+            <div class=""><img src="@/assets/images/forword.png" alt=""></div>
           </div>
           <div class="flex gap-8 py-8">
-            <img class="h-5 " src="src/assets/images/github.png">
-            <img class="h-5" src="src/assets/images/linkedin.png">
-            <img class="h-5" src="src/assets/images/telegram.png">
-            <img class="h-5" src="src/assets/images/twitter.png">
+            <img class="h-5 " src="@/assets/images/github.png" alt="">
+            <img class="h-5" src="@/assets/images/linkedin.png" alt="">
+            <img class="h-5" src="@/assets/images/telegram.png" alt="">
+            <img class="h-5" src="@/assets/images/twitter.png" alt="">
           </div>
         </div>
       </div>

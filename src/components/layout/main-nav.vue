@@ -27,7 +27,7 @@ let open = ref(false);
 
 function toggleActive(link): void {
   url.value.forEach((item) => {
-    item["active"] = false
+    item["is_active"] = false
   });
   link.active = true
 }
@@ -41,7 +41,7 @@ function toggleMenu() {
 <template>
   <nav>
     <div class=" flex md:flex-row hidden md:flex pb-6 text-sm">
-      <div><img class="h-14" src="src/assets/images/icons/a-logo-b.png" alt="abayomi-aluko"></div>
+      <div><img class="h-14" src="@/assets/images/icons/a-logo-b.png" alt="abayomi-aluko"></div>
       <div class="sm:flex-grow">
         <div class=" mx-auto rounded-full bg-zinc-800 text-white w-96 p-3 drop-shadow-lg border border-gray-400 text-center ">
           <RouterLink
@@ -57,13 +57,13 @@ function toggleMenu() {
   <nav>
     <div class="flex md:flex-col md:hidden  pb-6 text-lg transition-all">
       <div v-show="!open" class="flex justify-between w-full">
-        <div ><img class="h-10" src="src/assets/images/icons/a-logo-b.png" alt="abayomi-aluko"></div>
+        <div ><img class="h-10" src="@/assets/images/icons/a-logo-b.png" alt="abayomi-aluko"></div>
         <div class="cursor-pointer text-white" @click="toggleMenu">Open</div>
       </div>
       <div v-show="open"
            class="absolute right-0 top-0 bg-zinc-800 transition-all pl-5 sm:w-96 w-full h-screen drop-shadow-xl">
         <div class="flex justify-between mt-8 pr-6">
-          <div><img class="h-10" src="src/assets/images/icons/a-logo-b.png" alt="abayomi-aluko"></div>
+          <div><img class="h-10" src="@/assets/images/icons/a-logo-b.png" alt="abayomi-aluko"></div>
           <div class="cursor-pointer text-white" @click="toggleMenu">Close</div>
         </div>
         <div class="flex flex-col mt-32  text-white">
