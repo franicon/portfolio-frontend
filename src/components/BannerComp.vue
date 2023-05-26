@@ -2,7 +2,7 @@
 
 <template>
   <header>
-      <div class="py-10 max-w-6xl flex flex-col justify-center">
+      <div class="py-3 max-w-6xl flex flex-col justify-center">
         <div class="">
           <div class="md:h-36 h-16 border-l my-4 border-zinc-600"></div>
           <div class="pb-4 text-zinc-200 font-semibold">Hello, i'm Abayomi Aluko</div>

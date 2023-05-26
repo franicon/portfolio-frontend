@@ -47,7 +47,7 @@ function toggleMenu() {
     <div class=" flex md:flex-row hidden md:flex pb-6 text-sm">
       <div><img class="h-10" src="@/assets/images/icons/a-logo-w.png" alt="abayomi-aluko"></div>
       <div class="sm:flex-grow">
-        <div class=" mx-auto bg-zinc-800 rounded text-white w-96 p-3 drop-shadow-lg border border-gray-400 text-center ">
+        <div class=" mx-auto bg-transparent rounded text-white w-96 p-3 drop-shadow-lg border border-gray-400 text-center ">
           <RouterLink
               :class="link.active ? 'font-semibold px-3': 'px-3 hover:text-zinc-200'"
               @click="toggleActive(link)" v-for="link in url" :key="link.name" to="/">{{ link.name }}
@@ -63,7 +63,7 @@ function toggleMenu() {
       <div  class="flex justify-between w-full">
         <div ><img class="h-10" src="@/assets/images/icons/a-logo-w.png" alt="abayomi-aluko"></div>
       </div>
-      <div class="fixed bottom-0 z-50 right-0 left-0 bg-zinc-800 bg-opacity-90 rounded-t-3xl transition-all sm:w-96 w-full h-14 drop-shadow-xl">
+      <div class="fixed bottom-0 z-50 right-0 left-0 bg-zinc-900 bg-opacity-90 rounded-t-2xl border-gray-400 border-t transition-all sm:w-96 w-full h-14 drop-shadow-xl">
 
         <div class=" flex justify-center text-xs text-white text-center">
           <RouterLink
