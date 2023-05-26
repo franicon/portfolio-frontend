@@ -5,7 +5,7 @@
 <template>
   <div class="pt-44">
     <div class="border-l  rotate-180  h-28 w-0 flex justify-center  max-w-6xl mx-auto">
-      <div class="absolute w-96 top-0 bottom-0 rotate-180 text-center text-white pb-48">EXPLORE MY WORKS</div>
+      <div class="absolute w-96 top-0 bottom-0 rotate-180 text-center text-white pb-48 text-sm">E X P L O R E MY W O R K S</div>
       <div class="relative">
         <div class="absolute rounded-full w-10 h-10 bg-zinc-500 text-center rotate-180"></div>
         <div class="rounded-full w-10 h-10 bg-zinc-50 animate-ping absolute delay-1000"></div>

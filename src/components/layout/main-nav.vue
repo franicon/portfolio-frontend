@@ -59,21 +59,16 @@ function toggleMenu() {
 
   <!--  Nav Mobile-->
   <nav>
-    <div class="flex md:flex-col md:hidden  pb-6 text-lg transition-all">
-      <div v-show="!open" class="flex justify-between w-full">
+    <div class="relative flex md:flex-col md:hidden  pb-6 text-lg transition-all duration-500 overflow-x-hidden">
+      <div  class="flex justify-between w-full">
         <div ><img class="h-10" src="@/assets/images/icons/a-logo-w.png" alt="abayomi-aluko"></div>
-        <div class="cursor-pointer text-white" @click="toggleMenu">Open</div>
       </div>
-      <div v-show="open"
-           class="absolute right-0 top-0 bg-zinc-800 transition-all pl-5 sm:w-96 w-full h-screen drop-shadow-xl">
-        <div class="flex justify-between mt-8 pr-6">
-          <div><img class="h-10" src="@/assets/images/icons/a-logo-w.png" alt="abayomi-aluko"></div>
-          <div class="cursor-pointer text-white" @click="toggleMenu">Close</div>
-        </div>
-        <div class="flex flex-col mt-32  text-white">
+      <div class="fixed bottom-0 z-50 right-0 left-0 bg-zinc-800 bg-opacity-90 rounded-t-3xl transition-all sm:w-96 w-full h-14 drop-shadow-xl">
+
+        <div class=" flex justify-center text-xs text-white text-center">
           <RouterLink
-              :class="link.active ? 'font-semibold my-5 text-white': ' my-5 hover:text-white'"
-              @click="toggleActive(link); toggleMenu()" v-for="link in url" :key="link.name" to="/">{{ link.name }}
+              :class="link.active ? 'font-semibold my-5 text-white mx-4': 'mx-4 my-5 hover:text-white'"
+              @click="toggleActive(link)" v-for="link in url" :key="link.name" to="/">{{ link.name }}
           </RouterLink>
         </div>
       </div>
