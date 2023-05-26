@@ -4,10 +4,11 @@
   <header>
       <div class="  max-w-6xl flex flex-col justify-center">
         <div class="">
-          <div class="h-36 border-l my-4 bg-gradient-to-r border-zinc-600"></div>
+          <div class="md:h-36 h-24 border-l my-4"></div>
           <div class="pb-4 text-zinc-200 font-semibold">Hello, i'm Abayomi Aluko</div>
           <h1 class="xl:text-8xl lg:text-7xl md:text-7xl sm:text-6xl text-5xl font-bold text-start
-           bg-gradient-to-r from-cyan-200 via-zinc-100 to-purple-100 inline-block text-transparent bg-clip-text  transition-all">
+           bg-gradient-to-r from-cyan-300 via-purple-100 to-cyan-300  inline-block text-transparent bg-clip-text animate-gradient-x
+  transition-all">
 <!--             &lt;/&gt; -->
             The server warlock who controls  dynamics in the making of web-app.
           </h1>

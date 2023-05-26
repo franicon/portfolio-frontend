@@ -4,7 +4,7 @@ import MainNav from "@/components/layout/main-nav.vue";
 </script>
 
 <template>
-  <div class="">
+  <div class="bg-[url('src/assets/images/download.svg')]">
     <div class="sm:max-w-screen-2xl mx-auto  py-8 md:px-8 px-4 ">
       <main-nav/>
       <RouterView />
