@@ -2,7 +2,7 @@
 import {useModalStore} from "@/stores/modal";
 
 const store = useModalStore();
-const { toggleModal } = store
+const {toggleModal} = store
 
 </script>
 
@@ -21,85 +21,37 @@ const { toggleModal } = store
       </div>
     </div>
   </div>
-  <div class=" py-44">
+  <div class="flex flex-col py-44">
     <div
-        class="md:text-6xl text-center text-4xl bg-gradient-to-r from-purple-200 via-zinc-50 to-cyan-100 inline-block text-transparent bg-clip-text font-bold">
+        class="md:text-6xl text-start text-4xl bg-gradient-to-r from-purple-200 via-zinc-50 to-cyan-100 inline-block text-transparent bg-clip-text font-bold">
       My Complete Projects
     </div>
-    <div class="mt-24 relative flex">
-      <div class="grid md:grid-cols-3 gap-8">
-        <div
-            class="font-light relative group overflow-hidden rounded-xl border border-zinc-800 shadow-2xl shadow-cyan-800/20 cursor-pointer"
-            @click="toggleModal">
-          <div class="bg-[url('@/assets/images/cheetah.png')] w-[450px] bg-cover h-96"></div>
-          <div class="absolute bg-zinc-900 opacity-20 to-cyan-600  h-full left-0 bottom-0 right-0"></div>
+    <div class="mt-24 relative flex ">
+      <div class="">
+        <div class="grid md:grid-cols-3 gap-8">
           <div
-              class="md:group-hover:opacity-100 bg-gradient-to-b from-transparent to-zinc-950/90 w-full h-full absolute bottom-0 left-0 right-0 duration-500 md:opacity-0">
-            <div class="absolute bottom-8 z-20 mx-4">
-              <div class="text-xl font-bold text-white">CheetahMax</div>
-              <div class="text-xs text-zinc-100">A logistics website for shipping international products</div>
-              <div class="flex text-[10px] mt-4 gap-2 flex-wrap">
-                <div class="bg-white px-3 py-2 rounded-full font-bold ">ReactJS</div>
-                <div class="bg-white px-3 py-2 rounded-full font-bold ">Javascript</div>
-                <div class="bg-white px-3 py-2 rounded-full font-bold ">Bootstrap Css</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-            class="font-light relative group overflow-hidden rounded-xl border border-zinc-800 shadow-2xl shadow-cyan-800/20">
-          <div class="bg-[url('@/assets/images/valuexpa.png')] w-[450px] bg-cover h-96"></div>
-          <div class="absolute bg-zinc-900 opacity-20 to-cyan-600  h-full left-0 bottom-0 right-0"></div>
-          <div
-              class="group-hover:opacity-100 bg-gradient-to-b from-transparent to-zinc-950/90 w-full h-full absolute bottom-0 left-0 right-0 duration-500 opacity-0">
-            <div class="absolute bottom-8 z-20 mx-4">
-              <div class="text-xl font-bold text-white">ValueXpa</div>
-              <div class="text-xs text-zinc-100">A logistics website for shipping international products</div>
-              <div class="flex text-[10px] mt-4 gap-2 flex-wrap">
-                <div class="bg-white px-3 py-2 rounded-full font-bold ">Laravel</div>
-                <div class="bg-white px-3 py-2 rounded-full font-bold ">Api</div>
-                <div class="bg-white px-3 py-2 rounded-full font-bold ">VueJs</div>
-                <div class="bg-white px-3 py-2 rounded-full font-bold ">Bootstrap Css</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-            class="font-light relative group overflow-hidden rounded-xl border border-zinc-800 shadow-2xl shadow-cyan-800/20">
-          <div class="bg-[url('@/assets/images/danvicas.png')] w-[450px] bg-cover h-96"></div>
-          <div class="absolute bg-zinc-900 opacity-20 to-cyan-600  h-full left-0 bottom-0 right-0"></div>
-          <div
-              class="group-hover:opacity-100 bg-gradient-to-b from-transparent to-zinc-950/90 w-full h-full absolute bottom-0 left-0 right-0 duration-500 opacity-0">
-            <div class="absolute bottom-8 z-20 mx-4">
-              <div class="text-xl font-bold text-white">ValueXpa</div>
-              <div class="text-xs text-zinc-100">A logistics website for shipping international products</div>
-              <div class="flex text-[10px] mt-4 gap-2 flex-wrap">
-                <div class="bg-white px-3 py-2 rounded-full font-bold ">Laravel</div>
-                <div class="bg-white px-3 py-2 rounded-full font-bold ">Blade Component</div>
-                <div class="bg-white px-3 py-2 rounded-full font-bold ">Tailwind-Css</div>
-                <div class="bg-white px-3 py-2 rounded-full font-bold ">Bootstrap-Css</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-            class="font-light relative group overflow-hidden rounded-xl border border-zinc-800 shadow-2xl shadow-cyan-800/20">
-          <div class="bg-[url('@/assets/images/shifta.png')] w-[450px] bg-cover h-96"></div>
-          <div class="absolute bg-zinc-900 opacity-20 to-cyan-600  h-full left-0 bottom-0 right-0"></div>
-          <div
-              class="group-hover:opacity-100 bg-gradient-to-b from-transparent to-zinc-950/90 w-full h-full absolute bottom-0 left-0 right-0 duration-500 opacity-0">
-            <div class="absolute bottom-8 z-20 mx-4">
-              <div class="text-xl font-bold text-white">Shifta</div>
-              <div class="text-xs text-zinc-100">A logistics website for shipping international products</div>
-              <div class="flex text-[10px] mt-4 gap-2 flex-wrap">
-                <div class="bg-white px-3 py-2 rounded-full font-bold ">Vuejs</div>
-                <div class="bg-white px-3 py-2 rounded-full font-bold ">Javascript</div>
-                <div class="bg-white px-3 py-2 rounded-full font-bold ">Tailwind-Css</div>
+              class="font-light relative group overflow-hidden rounded-xl border border-zinc-800 shadow-2xl shadow-cyan-800/20 cursor-pointer"
+              @click="toggleModal">
+            <div class="bg-[url('@/assets/images/cheetah.png')] w-[450px] bg-cover h-96"></div>
+            <div class="absolute bg-zinc-900 opacity-25 to-cyan-600  h-full left-0 bottom-0 right-0"></div>
+            <div
+                class="md:group-hover:opacity-100 bg-gradient-to-b from-transparent to-zinc-950/90 w-full h-full absolute bottom-0 left-0 right-0 duration-500 md:opacity-0">
+              <div class="absolute bottom-8 z-20 mx-4">
+                <div class="text-xl font-bold text-white">CheetahMax</div>
+                <div class="text-xs text-zinc-100">A logistics website for shipping international products</div>
+                <div class="flex text-[10px] mt-4 gap-2 flex-wrap">
+                  <div class="bg-white px-3 py-2 rounded-full font-bold ">ReactJS</div>
+                  <div class="bg-white px-3 py-2 rounded-full font-bold ">Javascript</div>
+                  <div class="bg-white px-3 py-2 rounded-full font-bold ">Bootstrap Css</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <div class="bg-zinc-800 px-8 py-2 rounded text-white text-sm mx-auto mt-10 cursor-pointer hover:bg-zinc-700">Load
+      More
     </div>
   </div>
 </template>
