@@ -1,13 +1,15 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import MainNav from "@/components/layout/main-nav.vue";
+import MainNav from "@/components/layout/main-nav.vue"
+import ModalPopup from "@/components/ModalPopup.vue"
 </script>
 
 <template>
-  <div class="">
+    <ModalPopup/>
+  <div class="bg-[url('@/assets/images/download.svg')] duration-500">
     <div class="sm:max-w-screen-2xl mx-auto  py-8 md:px-8 px-4 ">
       <main-nav/>
-      <RouterView />
+      <RouterView  />
     </div>
   </div>
 
