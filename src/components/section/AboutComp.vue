@@ -13,7 +13,7 @@
       </div>
       <div class="text-white relative w-full xl:max-w-3xl">
         <div class="z-10 absolute xl:right-16 lg:right-20 md:right-10 sm:right-10 right-5 xl:left-16 lg:left-20 md:left-10 sm:left-10 left-5 xl:top-0 lg:top-28 md:top-32 sm:top-20 top-20">
-          <div class="bg-gradient-to-r from-zinc-900 via-zinc-900 to-zinc-950 rounded-xl md:p-8 p-4 border border-zinc-800 space-y-6 flex justify-between xl:flex-col lg:flex-row md:flex-row sm:flex-col flex-col">
+          <div class=" bg-opacity-10 backdrop-blur-lg rounded-xl md:p-8 p-4 border border-zinc-800 space-y-6 flex justify-between xl:flex-col lg:flex-row md:flex-row sm:flex-col flex-col">
             <div class="xl:max-w-xl lg:max-w-sm md:max-w-xs lg:pr-10 md:pr-5 mb-2">
               <div class="md:text-2xl lg:text-2xl xl:text-2xl sm:text-2xl font-semibold">Technologies</div>
               <div class="text-[13px] xl:text-[14px]  font-light mt-1 text-gray-300">Here are few frameworks & library i have been working with lately.</div>
@@ -34,12 +34,12 @@
         </div>
     </div>
     </div>
-    <div class="relative md:px-10 xl:px-10 lg:px-10 px-5 flex md:flex-row justify-between flex-col gap-8 text-white xl:mt-16 md:mt-56 mt-64 xl:mt-14 pt-36 bg-gradient-to-b from-zinc-950 to-zinc-900/ border-zinc-800 border-t w-full">
+    <div class="bg-opacity-40 backdrop-blur-2xl relative md:px-10 xl:px-10 lg:px-10 px-5 flex md:flex-row justify-between flex-col gap-8 text-white xl:mt-16 md:mt-56 mt-64 xl:mt-14 pt-36 border-zinc-800 border-t w-full">
       <div class="cursor-pointer md:rounded-2xl w-full text-[13px] font-light text-zinc-300">
         <div class="w-full space-y-2 mt-4">
           <h3 class="text-2xl font-semibold">Attributes</h3>
           <div class="grid xl:grid-cols-3 lg:grid-cols-2 pt-5 md:gap-6 gap-5">
-            <div class="rounded-xl border border-zinc-800 md:p-8 p-6 space-y-5 bg-gradient-to-tl from-zinc-950 via-zinc-900 to-zinc-950 shadow">
+            <div class="rounded-xl border border-zinc-800 md:p-8 p-6 space-y-5 bg-opacity-40 backdrop-blur-2xl">
               <div class="text-[16px] font-semibold flex gap-4 items-center">
                 <div class="bg-zinc-400 p-2 rounded"><img class="w-6" src="@/assets/images/icons/architechture.png" alt="" > </div>
                 Architecture
@@ -50,7 +50,7 @@
                 the required features, modules needed to ensure efficient operation and maintainability.
               </p>
             </div>
-            <div class="rounded-xl border border-zinc-800 md:p-8 p-4 space-y-5 bg-gradient-to-tl from-zinc-950 via-zinc-900 to-zinc-950 shadow">
+            <div class="rounded-xl border border-zinc-800 md:p-8 p-4 space-y-5 bg-opacity-40 backdrop-blur-2xl">
               <div class="text-[16px] font-semibold flex gap-4 items-center">
                 <div class="bg-zinc-400 p-2 rounded"><img class="w-6" src="@/assets/images/icons/secure-shield.png" alt="" > </div>
                 Auth
@@ -61,7 +61,7 @@
                 I follow the best practice implementing secure process for transmitting and verifying auth data.
               </p>
             </div>
-            <div class="rounded-xl border border-zinc-800 md:p-8 p-4 space-y-5 bg-gradient-to-tl from-zinc-950 via-zinc-950 to-zinc-900 shadow">
+            <div class="rounded-xl border border-zinc-800 md:p-8 p-4 space-y-5 bg-opacity-40 backdrop-blur-2xl">
               <div class="text-[16px] font-semibold flex gap-4 items-center">
                 <div class="bg-zinc-400 p-2 rounded"><img class="w-6" src="@/assets/images/icons/test.png" alt="" > </div>
                 Testing
@@ -72,7 +72,7 @@
                 I implement the required test ensuring that issues are identified and resolved
               </p>
             </div>
-            <div class="rounded-xl border border-zinc-800 md:p-8 p-4 space-y-5 bg-gradient-to-tl from-zinc-950 via-zinc-950 to-zinc-900 shadow">
+            <div class="rounded-xl border border-zinc-800 md:p-8 p-4 space-y-5 bg-opacity-40 backdrop-blur-2xl">
               <div class="text-[16px] font-semibold flex gap-4 items-center">
                 <div class="bg-zinc-400 p-2 rounded"><img class="w-6" src="@/assets/images/icons/documented-code.png" alt="" > </div>
                 Documented Code
@@ -84,7 +84,7 @@
                 maintainability, and collaboration among other developers.
               </p>
             </div>
-            <div class="rounded-xl border border-zinc-800 md:p-8 p-4 space-y-5 bg-gradient-to-tl from-zinc-950 via-zinc-950 to-zinc-900 shadow">
+            <div class="rounded-xl border border-zinc-800 md:p-8 p-4 space-y-5 bg-opacity-40 backdrop-blur-2xl">
               <div class="text-[16px] font-semibold flex gap-4 items-center">
                 <div class="bg-zinc-400 p-2 rounded"><img class="w-6" src="@/assets/images/icons/responsive.png" alt="" > </div>
                 Responsiveness
@@ -95,7 +95,7 @@
                 to increased user satisfaction and engagement.
               </p>
             </div>
-            <div class="rounded-xl border border-zinc-800 md:p-8 p-4 space-y-5 bg-gradient-to-tl from-zinc-950 via-zinc-950 to-zinc-900 shadow">
+            <div class="rounded-xl border border-zinc-800 md:p-8 p-4 space-y-5 bg-opacity-40 backdrop-blur-2xl">
               <div class="text-[16px] font-semibold flex gap-4 items-center">
                 <div class="bg-zinc-400 p-2 rounded"><img class="w-6" src="@/assets/images/icons/dynamic.png" alt="" > </div>
                 Dynamics
@@ -111,15 +111,15 @@
                 Fast-forward to today I have had the opportunities to work remotely with diverse Company | Brand of different fields:
               </p>
               <div class="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 mt-5 gap-3 backdrop-blur-2xl backdrop-filter">
-                <div class="bg-zinc-800 py-2 px-6 rounded-1xl rounded backdrop-blur-2xl backdrop-filter">
+                <div class="bg-zinc-800 py-2 px-6 rounded-1xl rounded backdrop-blur-2xl backdrop-filter bg-opacity-40 backdrop-blur-2xl">
                   <h2 class="text-md font-semibold">Paychant</h2>
                   <p class="text-[13px]">Software Engineer</p>
                 </div>
-                <div class="bg-zinc-800 py-2 px-6 rounded-1xl  rounded">
+                <div class="bg-zinc-800 py-2 px-6 rounded-1xl  rounded bg-opacity-40 backdrop-blur-2xl">
                   <h2 class="text-md font-semibold">Paramount Student</h2>
                   <p class="text-[13px]">Lead Frontend Engineer</p>
                 </div>
-                <div class="bg-zinc-800 py-2 px-6 rounded-1xl  rounded">
+                <div class="bg-zinc-800 py-2 px-6 rounded-1xl  rounded bg-opacity-40 backdrop-blur-2xl">
                   <h2 class="text-md font-semibold">AMD Dubai</h2>
                   <p class="text-[13px]">Product Designer</p>
                 </div>
