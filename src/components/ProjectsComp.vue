@@ -26,7 +26,25 @@ const {toggleModal} = store
     <div class="md:text-6xl text-start text-4xl bg-gradient-to-r from-purple-200 via-zinc-50 to-cyan-100 inline-block text-transparent bg-clip-text font-bold"> My Complete Projects</div>
     <div class="mt-24 relative flex ">
       <div class="">
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="grid md:grid-cols-2 sm:grid-cols-1 gap-8">
+          <div
+              class="font-light relative group overflow-hidden rounded-xl border border-zinc-800 shadow-2xl shadow-cyan-800/20 cursor-pointer"
+              @click="toggleModal">
+            <div class="bg-[url('@/assets/images/cheetah.png')] xl:w-[450px] lg:w-[450px] md:w-[450px] sm:w-screen w-screen bg-cover h-96"></div>
+            <div class="absolute bg-zinc-900 opacity-25 to-cyan-600  h-full left-0 bottom-0 right-0"></div>
+            <div
+                class="md:group-hover:opacity-100 bg-gradient-to-b from-transparent to-zinc-950/90 w-full h-full absolute bottom-0 left-0 right-0 duration-500 md:opacity-0">
+              <div class="absolute bottom-8 z-20 mx-4">
+                <div class="text-xl font-bold text-white">CheetahMax</div>
+                <div class="text-xs text-zinc-100">A logistics website for shipping international products</div>
+                <div class="flex text-[10px] mt-4 gap-2 flex-wrap">
+                  <div class="bg-white px-3 py-2 rounded-full font-bold ">ReactJS</div>
+                  <div class="bg-white px-3 py-2 rounded-full font-bold ">Javascript</div>
+                  <div class="bg-white px-3 py-2 rounded-full font-bold ">Bootstrap Css</div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div
               class="font-light relative group overflow-hidden rounded-xl border border-zinc-800 shadow-2xl shadow-cyan-800/20 cursor-pointer"
               @click="toggleModal">
@@ -45,6 +63,7 @@ const {toggleModal} = store
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>

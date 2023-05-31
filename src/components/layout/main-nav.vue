@@ -82,7 +82,7 @@ window.removeEventListener('scroll', manageNav)
       <div  class="flex justify-between w-full">
         <div ><img class="h-10" src="@/assets/images/icons/a-logo-w.png" alt="abayomi-aluko"></div>
       </div>
-      <div v-show="!showNavbar" class="fixed bottom-0 z-10 right-0 left-0 bg-zinc-900 bg-opacity-90 rounded-t-2xl border-gray-400 border-t transition-all duration-500 sm:w-96 w-full h-14 drop-shadow-xl">
+      <div v-show="!showNavbar" class="fixed bottom-0 z-10 right-0 left-0 bg-zinc-900 bg-opacity-90 rounded-t-2xl border-gray-400 border-t transition-all duration-500 sm:w-screen w-full h-14 drop-shadow-xl">
 
         <div  class=" flex justify-center text-xs text-white text-center">
           <RouterLink
