@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { stakcsData } from "@/_mock/Stack"
 import StackCard  from "@/components/shared/StackCard.vue"
 </script>
 
@@ -13,7 +14,7 @@ import StackCard  from "@/components/shared/StackCard.vue"
       </div>
       <div class="text-white relative w-full xl:max-w-2xl">
         <div class="z-10 absolute xl:right-16 lg:right-20 md:right-10 sm:right-10 right-5 xl:left-16 lg:left-20 md:left-10 sm:left-10 left-5 xl:top-0 lg:top-28 md:top-32 sm:top-20 top-20">
-          <StackCard/>
+          <StackCard :render="stakcsData" />
         </div>
     </div>
     </div>

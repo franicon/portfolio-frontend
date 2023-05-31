@@ -3,6 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-stack {
+    @apply bg-gradient-to-r from-zinc-900 via-zinc-900 to-zinc-950 flex justify-between xl:flex-col lg:flex-row md:flex-row sm:flex-col flex-col
+}
+.stack-grid {
+    @apply grid xl:grid-cols-8 lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-7 grid-cols-5
+}
 
 
 body {
