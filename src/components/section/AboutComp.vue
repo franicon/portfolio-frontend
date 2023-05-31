@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import StackCard  from "@/components/shared/StackCard.vue"
 </script>
 
 <template>
@@ -11,26 +11,9 @@
       <div class="max-w-md leading-relaxed text-zinc-400 text-md pt-4">
         <p class="font-normal text-[13px]">I have fun building web applications and more so making the experience dynamic. let's take a short tour! </p>
       </div>
-      <div class="text-white relative w-full xl:max-w-3xl">
+      <div class="text-white relative w-full xl:max-w-2xl">
         <div class="z-10 absolute xl:right-16 lg:right-20 md:right-10 sm:right-10 right-5 xl:left-16 lg:left-20 md:left-10 sm:left-10 left-5 xl:top-0 lg:top-28 md:top-32 sm:top-20 top-20">
-          <div class="bg-gradient-to-r from-zinc-900 via-zinc-900 to-zinc-950 rounded-xl md:p-8 p-4 border border-zinc-800 space-y-6 flex justify-between xl:flex-col lg:flex-row md:flex-row sm:flex-col flex-col">
-            <div class="xl:max-w-xl lg:max-w-sm md:max-w-xs lg:pr-10 md:pr-5 mb-2">
-              <div class="md:text-2xl lg:text-2xl xl:text-2xl sm:text-2xl font-semibold">Technologies</div>
-              <div class="text-[13px] xl:text-[14px]  font-light mt-1 text-gray-300">Here are few frameworks & library i have been working with lately.</div>
-            </div>
-            <div class="">
-              <div class="grid xl:grid-cols-8 lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-7 grid-cols-4 items-center gap-2">
-                <div class="bg-zinc-800 border border-zinc-700 rounded  lg:p-2 xl:p-3 md:p-2 sm:p-2 sm:p-2 p-2 m-auto "><img class=" w-7 xl:w-10 " src="@/assets/images/icons/js.png"></div>
-                <div class="bg-zinc-800 border border-zinc-700 rounded  lg:p-2 xl:p-2 md:p-2 sm:p-2 sm:p-2 p-2 m-auto"><img class="w-7 xl:w-9" src="@/assets/images/icons/ts.svg"></div>
-                <div class="bg-zinc-800 border border-zinc-700 rounded  lg:p-2 xl:p-2 md:p-2 sm:p-2 sm:p-2 p-2 mx-auto"><img class="w-7 xl:w-8" src="@/assets/images/icons/node.svg"></div>
-                <div class="bg-zinc-800 border border-zinc-700 rounded  lg:p-2 xl:p-2 md:p-2 sm:p-2 sm:p-2 p-2 m-auto"><img class="w-7" src="@/assets/images/icons/express.svg"></div>
-                <div class="bg-zinc-800 border border-zinc-700 rounded  lg:p-2 xl:p-2 md:p-2 sm:p-2 sm:p-2 p-2 m-auto"><img class="w-7" src="@/assets/images/icons/nest.svg"></div>
-                <div class="bg-zinc-800 border border-zinc-700 rounded  lg:p-2 xl:p-2 md:p-2 sm:p-2 sm:p-2 p-2 m-auto"><img class="w-7 xl:w-8" src="@/assets/images/icons/laravel.svg"></div>
-                <div class="bg-zinc-800 border border-zinc-700 rounded  lg:p-2 xl:p-2 md:p-2 sm:p-2 sm:p-2 p-2 m-auto"><img class="w-7 xl:w-9" src="@/assets/images/icons/vue.svg"></div>
-                <div class="bg-zinc-800 border border-zinc-700 rounded  lg:p-2 xl:p-3 md:p-2 sm:p-2 sm:p-2 p-2 m-auto"><img class="w-7 xl:w-10" src="@/assets/images/icons/nuxt.svg"></div>
-              </div>
-            </div>
-          </div>
+          <StackCard/>
         </div>
     </div>
     </div>
