@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type {stackType} from "@/types";
-defineProps<{render: stackType}>()
+import { stakcsData } from "@/_mock/Stack"
+defineProps<{render: typeof stakcsData}>()
 
 </script>
 
@@ -14,7 +14,7 @@ defineProps<{render: stackType}>()
       <div>
         <div class=" stack-grid items-center gap-2">
           <template v-for="stack in render" :key="stack.alt" >
-            <div class="bg-zinc-800 border border-zinc-700 rounded  lg:p-2 xl:p-3 md:p-2 sm:p-2 sm:p-2 p-2 m-auto"><img class=" w-7 xl:w-10 " :src="stack.url" alt=""></div>
+            <div class="bg-zinc-800 border border-zinc-700 rounded  lg:p-2 xl:p-3 md:p-2 sm:p-2 sm:p-2 p-2 m-auto"><img class=" w-7 xl:w-10 " :src="stack.url" :alt="stack.alt"></div>
           </template>
         </div>
       </div>
