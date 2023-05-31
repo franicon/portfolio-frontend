@@ -9,14 +9,14 @@
     </div>
     <div class="flex flex-col xl:flex-row justify-between relative">
       <div class="max-w-md leading-relaxed text-zinc-400 text-md pt-4">
-        <p class="font-normal">I have fun building web applications and more so making the experience dynamic. let's take a short tour! </p>
+        <p class="font-normal text-[13px]">I have fun building web applications and more so making the experience dynamic. let's take a short tour! </p>
       </div>
       <div class="text-white relative w-full xl:max-w-3xl">
         <div class="z-10 absolute xl:right-16 lg:right-20 md:right-10 sm:right-10 right-5 xl:left-16 lg:left-20 md:left-10 sm:left-10 left-5 xl:top-0 lg:top-28 md:top-32 sm:top-20 top-20">
           <div class="bg-gradient-to-r from-zinc-900 via-zinc-900 to-zinc-950 rounded-xl md:p-8 p-4 border border-zinc-800 space-y-6 flex justify-between xl:flex-col lg:flex-row md:flex-row sm:flex-col flex-col">
             <div class="xl:max-w-xl lg:max-w-sm md:max-w-xs lg:pr-10 md:pr-5 mb-2">
-              <div class="text-2xl font-semibold">Technologies</div>
-              <div class="text-[14px] font-light mt-1 text-gray-300">Here are few frameworks & library i have been working with lately.</div>
+              <div class="md:text-2xl lg:text-2xl xl:text-2xl sm:text-2xl font-semibold">Technologies</div>
+              <div class="text-[13px] xl:text-[14px]  font-light mt-1 text-gray-300">Here are few frameworks & library i have been working with lately.</div>
             </div>
             <div class="">
               <div class="grid xl:grid-cols-8 lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-7 grid-cols-4 items-center gap-2">
@@ -107,7 +107,7 @@
           <div class="">
             <div class="max-w-3xl mx-auto rounded-xl bg-gradient-to-tr via-zinc-900 to-zinc-900 mt-11 p-10 relative overflow-hidden">
               <h3 class="text-xl font-semibold mb-3">Experience</h3>
-              <p class="text-md font-normal text-zinc-300 max-w-md">
+              <p class="text-md font-normal text-zinc-300 xl:max-w-md max-w-full">
                 Fast-forward to today I have had the opportunities to work remotely with diverse Company | Brand of different fields:
               </p>
               <div class="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 mt-5 gap-3 backdrop-blur-2xl backdrop-filter">
