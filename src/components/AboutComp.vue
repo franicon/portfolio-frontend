@@ -19,7 +19,7 @@
               <div class="text-[14px] font-light mt-1 text-gray-300">Here are few frameworks & library i have been working with lately.</div>
             </div>
             <div class="">
-              <div class="grid xl:grid-cols-8 lg:grid-cols-5 md:grid-cols-5 grid-cols-8 sm:grid-cols-7 grid-cols-4 items-center gap-2">
+              <div class="grid xl:grid-cols-8 lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-7 grid-cols-4 items-center gap-2">
                 <div class="bg-zinc-800 border border-zinc-700 rounded  lg:p-2 xl:p-3 md:p-2 sm:p-2 sm:p-2 p-2 m-auto "><img class=" w-7 xl:w-10 " src="@/assets/images/icons/js.png"></div>
                 <div class="bg-zinc-800 border border-zinc-700 rounded  lg:p-2 xl:p-2 md:p-2 sm:p-2 sm:p-2 p-2 m-auto"><img class="w-7 xl:w-9" src="@/assets/images/icons/ts.svg"></div>
                 <div class="bg-zinc-800 border border-zinc-700 rounded  lg:p-2 xl:p-2 md:p-2 sm:p-2 sm:p-2 p-2 mx-auto"><img class="w-7 xl:w-8" src="@/assets/images/icons/node.svg"></div>
