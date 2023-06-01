@@ -4,7 +4,7 @@ const features: featureType[] = [
     {
         title: 'Architecture',
         description: 'A software architecture ultimately lead to robust & scalable software solutions. ' +
-            'I get with dev process by using visual representations to structure & organize the required ' +
+            'I started get with dev process by using visual representations to structure & organize the required ' +
             'features, modules needed to ensure efficient operation and maintainability.'
     },
     {
@@ -14,9 +14,9 @@ const features: featureType[] = [
             'implementing secure process for transmitting and verifying auth data.'
     },
     {
-        title: 'testing',
-        description: 'Testing is crucial for identifying defects, errors, and bug in software dev, and it helps in improving ' +
-            'the overall quality and reliability of the system. I implement the required test ensuring that ' +
+        title: 'Testing',
+        description: 'Testing is crucial for identifying defects, errors, and bug in software development, and it helps in improving ' +
+            'the overall quality and reliability of the system. I implement the required test needed to ensured ' +
             'issues are identified and resolved'
 
     },
@@ -34,11 +34,5 @@ const features: featureType[] = [
             'interactions, ultimately leading to increased user satisfaction and engagement.'
 
     },
-    {
-        title: 'Dynamics',
-        description: 'Every Supabase project comes with a full Postgres database, a free and open source database which is considered ' +
-            'one of the world\'s most stable and advanced databases.'
-
-    }
 ]
 export { features }
