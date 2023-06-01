@@ -9,4 +9,9 @@ type stackType = {
     alt: string
 }
 
-export type { routeType, stackType }
+type featureType = {
+    title: string,
+    description: string
+}
+
+export type { routeType, stackType, featureType }
