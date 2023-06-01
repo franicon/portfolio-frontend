@@ -28,6 +28,18 @@
     @apply xl:rounded-xl xl:border xl:border-zinc-800 md:p-8 p-2 space-y-5 bg-zinc-700 bg-opacity-10 backdrop-blur-lg shadow flex flex-col h-full
 }
 
+.dot {
+    @apply absolute h-4 w-4 bg-zinc-900 border-2 rounded-full
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    padding: 3rem;
+    margin-top: 10px;
+    left: -1rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+}
 
 body {
     font-family: 'Inter', sans-serif;

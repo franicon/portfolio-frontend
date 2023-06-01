@@ -34,7 +34,7 @@ import  ExperienceCard from "@/components/shared/ExperienceCard.vue";
                   </div>
                   <div v-for="feature in features" :key="feature.title" class="feat-card">
                     <div class="">
-                      <div class="absolute h-4 w-4 bg-zinc-900 border-2 rounded-full -left-7 pt-5 xl:hidden lg:hidden"></div>
+                      <div class="dot -left-7 pt-5 xl:hidden lg:hidden"></div>
                       <div class="text-[16px] font-semibold xl:pb-0 lg:pb-0 pb-4"> {{feature.title}} </div>
                       <p class="font-normal text-zinc-400 md:text-[13px] text-[12px]">
                         {{feature.description}}
