@@ -1,6 +1,6 @@
 import type { featureType } from "@/types";
 
-const Features: featureType[] = [
+const features: featureType[] = [
     {
         title: 'Architecture',
         description: 'A software architecture ultimately lead to robust & scalable software solutions. ' +
@@ -41,3 +41,4 @@ const Features: featureType[] = [
 
     }
 ]
+export { features }
