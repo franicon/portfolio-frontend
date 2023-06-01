@@ -13,17 +13,17 @@ import StackCard  from "@/components/shared/StackCard.vue"
         <p class="font-normal text-[13px]">I have fun building web applications and more so making the experience dynamic. let's take a short tour! </p>
       </div>
       <div class="text-white relative w-full xl:max-w-2xl">
-        <div class="z-10 absolute xl:right-16 lg:right-20 md:right-10 sm:right-10 right-5 xl:left-16 lg:left-20 md:left-10 sm:left-10 left-5 xl:top-0 lg:top-28 md:top-32 sm:top-20 top-20">
+        <div class="z-10 absolute xl:right-16 lg:right-20 md:right-10 sm:right-5 right-0 xl:left-16 lg:left-20 md:left-10 sm:left-5 left-0 xl:top-0 lg:top-28 md:top-32 sm:top-30 top-10">
           <StackCard :render="stakcsData" />
         </div>
     </div>
     </div>
-    <div class="relative md:px-10 xl:px-10 lg:px-10 px-5 flex md:flex-row justify-between flex-col gap-8 text-white xl:mt-16 md:mt-56 mt-64 xl:mt-14 pt-36 bg-gradient-to-b from-zinc-950 to-zinc-900/ border-zinc-800 border-t w-full">
+    <div class="relative md:px-10 xl:px-10 lg:px-10 px-5 flex md:flex-row justify-between flex-col gap-8 text-white xl:mt-0 md:mt-56 mt-64 pt-36 bg-transparent bg-opacity-30  w-full">
       <div class="cursor-pointer md:rounded-2xl w-full text-[13px] font-light text-zinc-300">
         <div class="w-full space-y-2 mt-4">
           <h3 class="text-2xl font-semibold">Attributes</h3>
           <div class="grid xl:grid-cols-3 lg:grid-cols-2 pt-5 md:gap-6 gap-5">
-            <div class="rounded-xl border border-zinc-800 md:p-8 p-6 space-y-5 bg-gradient-to-tl from-zinc-950 via-zinc-900 to-zinc-950 shadow">
+            <div class="rounded-xl border border-zinc-800 md:p-8 p-6 space-y-5 bg-zinc-700 bg-opacity-10 backdrop-blur-lg shadow">
               <div class="text-[16px] font-semibold flex gap-4 items-center">
                 <div class="bg-zinc-400 p-2 rounded"><img class="w-6" src="@/assets/images/icons/architechture.png" alt="" > </div>
                 Architecture
@@ -34,7 +34,7 @@ import StackCard  from "@/components/shared/StackCard.vue"
                 the required features, modules needed to ensure efficient operation and maintainability.
               </p>
             </div>
-            <div class="rounded-xl border border-zinc-800 md:p-8 p-4 space-y-5 bg-gradient-to-tl from-zinc-950 via-zinc-900 to-zinc-950 shadow">
+            <div class="rounded-xl border border-zinc-800 md:p-8 p-4 space-y-5 bg-zinc-700 bg-opacity-10 backdrop-blur-lg shadow">
               <div class="text-[16px] font-semibold flex gap-4 items-center">
                 <div class="bg-zinc-400 p-2 rounded"><img class="w-6" src="@/assets/images/icons/secure-shield.png" alt="" > </div>
                 Auth
@@ -45,7 +45,7 @@ import StackCard  from "@/components/shared/StackCard.vue"
                 I follow the best practice implementing secure process for transmitting and verifying auth data.
               </p>
             </div>
-            <div class="rounded-xl border border-zinc-800 md:p-8 p-4 space-y-5 bg-gradient-to-tl from-zinc-950 via-zinc-950 to-zinc-900 shadow">
+            <div class="rounded-xl border border-zinc-800 md:p-8 p-4 space-y-5 bg-zinc-700 bg-opacity-10 backdrop-blur-lg shadow">
               <div class="text-[16px] font-semibold flex gap-4 items-center">
                 <div class="bg-zinc-400 p-2 rounded"><img class="w-6" src="@/assets/images/icons/test.png" alt="" > </div>
                 Testing
@@ -56,7 +56,7 @@ import StackCard  from "@/components/shared/StackCard.vue"
                 I implement the required test ensuring that issues are identified and resolved
               </p>
             </div>
-            <div class="rounded-xl border border-zinc-800 md:p-8 p-4 space-y-5 bg-gradient-to-tl from-zinc-950 via-zinc-950 to-zinc-900 shadow">
+            <div class="rounded-xl border border-zinc-800 md:p-8 p-4 space-y-5 bg-zinc-700 bg-opacity-10 backdrop-blur-lg shadow">
               <div class="text-[16px] font-semibold flex gap-4 items-center">
                 <div class="bg-zinc-400 p-2 rounded"><img class="w-6" src="@/assets/images/icons/documented-code.png" alt="" > </div>
                 Documented Code
@@ -68,7 +68,7 @@ import StackCard  from "@/components/shared/StackCard.vue"
                 maintainability, and collaboration among other developers.
               </p>
             </div>
-            <div class="rounded-xl border border-zinc-800 md:p-8 p-4 space-y-5 bg-gradient-to-tl from-zinc-950 via-zinc-950 to-zinc-900 shadow">
+            <div class="rounded-xl border border-zinc-800 md:p-8 p-4 space-y-5 bg-zinc-700 bg-opacity-10 backdrop-blur-lg shadow">
               <div class="text-[16px] font-semibold flex gap-4 items-center">
                 <div class="bg-zinc-400 p-2 rounded"><img class="w-6" src="@/assets/images/icons/responsive.png" alt="" > </div>
                 Responsiveness
@@ -79,7 +79,7 @@ import StackCard  from "@/components/shared/StackCard.vue"
                 to increased user satisfaction and engagement.
               </p>
             </div>
-            <div class="rounded-xl border border-zinc-800 md:p-8 p-4 space-y-5 bg-gradient-to-tl from-zinc-950 via-zinc-950 to-zinc-900 shadow">
+            <div class="rounded-xl border border-zinc-800 md:p-8 p-4 space-y-5 bg-zinc-700 bg-opacity-10 backdrop-blur-lg shadow">
               <div class="text-[16px] font-semibold flex gap-4 items-center">
                 <div class="bg-zinc-400 p-2 rounded"><img class="w-6" src="@/assets/images/icons/dynamic.png" alt="" > </div>
                 Dynamics
