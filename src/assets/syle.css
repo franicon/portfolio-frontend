@@ -3,7 +3,43 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-stack {
+    @apply
+        bg-zinc-700
+        bg-opacity-20
+        backdrop-blur-lg
+        flex
+        justify-between
+        xl:flex-col
+        lg:flex-row
+        md:flex-row
+        sm:flex-col
+        flex-col
+}
+.stack-grid {
+    @apply grid xl:grid-cols-8 lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-8 grid-cols-5
+}
 
+.stack-wrapper {
+    @apply z-10 absolute xl:right-0 lg:right-20 md:right-10 sm:right-0 right-0 xl:left-16 lg:left-20 md:left-10 sm:left-0 left-0 xl:top-0 lg:top-28 md:top-32 top-10
+}
+
+.feat-card {
+    @apply xl:rounded-xl xl:border xl:border-zinc-800 md:p-8 p-2 space-y-5 bg-zinc-700 bg-opacity-10 backdrop-blur-lg shadow flex flex-col h-full
+}
+
+.dot {
+    @apply absolute h-4 w-4 bg-zinc-900 border-2 rounded-full
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    padding: 3rem;
+    margin-top: 10px;
+    left: -1rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+}
 
 body {
     font-family: 'Inter', sans-serif;
