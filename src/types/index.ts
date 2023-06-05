@@ -22,4 +22,15 @@ type experienceType = {
     description: string,
 }
 
+type projectType = {
+    link: string
+    img: string,
+    slug: string,
+    title: string,
+    about: string,
+    video?: string,
+    stacks: string[],
+    features: string[],
+}
+
 export type { routeType, stackType, featureType, experienceType }
