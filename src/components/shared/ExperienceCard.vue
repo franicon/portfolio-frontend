@@ -18,7 +18,7 @@ const props = defineProps({
             <li class="list-item text-zinc-400">
              {{ props.jobs.description }}
             </li>
-              <ProjectStacks :stacks="props.jobs.stacks"/>
+              <ProjectStacks :style="'bg-zinc-800 px-3 py-2 font-bold'" :stacks="props.jobs.stacks"/>
           </ul>
         </div>
       </li>

@@ -1,15 +1,22 @@
 <script setup lang="ts">
+defineProps<{data: string}>()
 import {storeToRefs} from "pinia";
 import {useModalStore} from '@/stores/modal'
 
 const store = useModalStore();
 const {isOpen} = storeToRefs(store)
-
 const {toggleModal} = store
+
+//
+// import ProjectStacks from "@/components/shared/ProjectStacks.vue";
+// import { useProjectStore } from "@/stores/project";
+// const  project = useProjectStore()
+// const { data } = storeToRefs(project)
+
 </script>
 
 <template>
-  <div class="w-screen fixed h-screen z-50  backdrop-blur ease-in-out transition-all" @click.self="toggleModal" v-show="isOpen">
+  <div class="w-screen fixed h-screen z-50  backdrop-blur ease-in-out transition-all" v-show="isOpen">
     <div class="flex justify-center flex-col h-screen relative overflow-hidden px-3">
 <!--      border top-->
       <div class=" top-0 xl:w-2/6 lg:w-3/6 md:w-4/6 w-full border-b-gray-500 px-8 border-b rounded-t-md mx-auto left-0 right-0 py-2 bg-zinc-900 shadow-y-2xl shadow-white">

@@ -33,4 +33,4 @@ type projectType = {
     features: string[],
 }
 
-export type { routeType, stackType, featureType, experienceType }
+export type { routeType, stackType, featureType, projectType, experienceType }
