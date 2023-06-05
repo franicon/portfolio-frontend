@@ -14,4 +14,12 @@ type featureType = {
     description: string
 }
 
-export type { routeType, stackType, featureType }
+type experienceType = {
+    url: string,
+    company: string,
+    stacks: string[],
+    position:  string,
+    description: string,
+}
+
+export type { routeType, stackType, featureType, experienceType }

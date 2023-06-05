@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import {features} from "@/_mock/Feature";
+import { features } from "@/_mock/Feature";
 import { stakcsData } from "@/_mock/Stack";
+import { experience } from "@/_mock/Experience";
 
 import StackCard  from "@/components/shared/StackCard.vue";
 import  ExperienceCard from "@/components/shared/ExperienceCard.vue";
@@ -46,7 +47,19 @@ import  ExperienceCard from "@/components/shared/ExperienceCard.vue";
             </div>
           </div>
         </div>
-      <ExperienceCard/>
+        <div class="">
+          <div class="max-w-3xl mx-auto rounded-xl bg-zinc-700 bg-opacity-10 backdrop-blur-lg mt-11 xl:p-10 p-4 relative overflow-hidden">
+            <h3 class="text-xl font-semibold mb-3 ">Experience</h3>
+            <p class="xl:text-md text-[14px] font-normal text-zinc-300 xl:max-w-xl max-w-full">
+              Fast-forward to today I have had the opportunities to work remotely with diverse Company | Brand of different fields:
+            </p>
+            <div class="mt-6">
+              <template v-for="job in experience" :key="job.company">
+                <ExperienceCard :jobs="job"/>
+              </template>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
