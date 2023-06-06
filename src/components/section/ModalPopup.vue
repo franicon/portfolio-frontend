@@ -1,17 +1,18 @@
 <script setup lang="ts">
-defineProps<{data: string}>()
 import {storeToRefs} from "pinia";
-import {useModalStore} from '@/stores/modal'
+import {useModalStore} from '@/stores/modal';
+import { useProjectStore } from "@/stores/project";
+import ProjectStacks from "@/components/shared/ProjectStacks.vue";
+import {ref} from "vue";
 
-const store = useModalStore();
-const {isOpen} = storeToRefs(store)
-const {toggleModal} = store
 
-//
-// import ProjectStacks from "@/components/shared/ProjectStacks.vue";
-// import { useProjectStore } from "@/stores/project";
-// const  project = useProjectStore()
-// const { data } = storeToRefs(project)
+const modal = useModalStore();
+const {toggleModal} = modal;
+const {isOpen} = storeToRefs(modal);
+
+const  project = useProjectStore();
+const { data } = storeToRefs(project);
+// const projectData = ref(data)
 
 </script>
 
@@ -39,25 +40,17 @@ const {toggleModal} = store
             <div class="space-y-5">
               <div class="flex justify-between items-center">
                 <div class="">
-                  <h1 class="text-2xl font-bold pt-4 items-center">Valuexpa</h1>
+                  <h1 class="text-2xl font-bold pt-4 items-center">{{data.title}}</h1>
                 </div>
                 <div class="bg-zinc-800 hover:bg-zinc-700 text-xs px-5 py-2 rounded cursor-pointer">View Site</div>
               </div>
               <div class="">
                 <h3 class="text-white text-1xl font-semibold">About</h3>
-                <p class="text-[14px] font-normal text-zinc-400">Piggment is a curated collection of amazingly colored
-                  gradients for designers, developers,
-                  and smart creators over the world. now you can generate, explore, save, easy CSS cross-browser
-                  gradient codes all in one place.</p>
+                <p class="text-[14px] font-normal text-zinc-400">{{data.about}}</p>
               </div>
               <div class="space-y-2">
                 <h3 class="text-white text-1xl font-semibold">Technologies</h3>
-                <div class="flex text-[10px]  gap-2 flex-wrap text-zinc-200">
-                  <div class="bg-zinc-800 px-3 py-2  font-bold ">VueJS</div>
-                  <div class="bg-zinc-800 px-3 py-2  font-bold ">Laravel</div>
-                  <div class="bg-zinc-800 px-3 py-2  font-bold ">BootstrapCss</div>
-                  <div class="bg-zinc-800 px-3 py-2 font-bold ">Api & Axios Api</div>
-                </div>
+                <ProjectStacks  :style="'bg-zinc-800 px-3 py-2 font-bold text-zinc-200 rounded'" :stacks="data.stacks"/>
               </div>
               <div class="space-y-2 pt-2">
                 <h3 class="text-white text-1xl font-semibold">Features</h3>

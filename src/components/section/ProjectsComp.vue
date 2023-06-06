@@ -1,18 +1,26 @@
 <script setup lang="ts">
+import {storeToRefs} from "pinia";
 import { projects } from "@/_mock/Projects";
 import ProjectStacks from "@/components/shared/ProjectStacks.vue";
-import ModalPopup from "@/components/section/ModalPopup.vue"
-
-import {storeToRefs} from "pinia";
 
 import { useModalStore } from "@/stores/modal";
-const store = useModalStore();
-const { toggleModal } = store;
-
 import { useProjectStore } from "@/stores/project";
-import {onMounted} from "vue";
-const  project = useProjectStore()
-const { data } = storeToRefs(project)
+import {ref} from "vue";
+import type {projectType} from "@/types";
+
+const store = useModalStore();
+const  project = useProjectStore();
+
+const {toggleModal} = store
+let { data } = storeToRefs(project)
+
+let projectData = ref(data)
+
+function openModal(details: projectType) {
+  projectData.value = details;
+  toggleModal()
+}
+
 
 </script>
 
@@ -29,11 +37,12 @@ const { data } = storeToRefs(project)
   </div>
   <div class="flex flex-col py-44">
     <div class="md:text-6xl text-start text-4xl bg-gradient-to-r from-purple-200 via-zinc-50 to-cyan-100 inline-block text-transparent bg-clip-text font-bold">Complete Projects</div>
-    <div class="mt-24 relative flex ">
+    <div class="mt-24 flex">
       <div class="">
         <div class="grid md:grid-cols-2 sm:grid-cols-1 gap-8">
+          <template v-for="project in projects" :key="project.title">
             <div class="font-light relative group overflow-hidden rounded-xl border border-zinc-800 shadow-2xl shadow-cyan-800/20 cursor-pointer"
-                 @click="toggleModal" v-for="project in projects" :key="project.title">
+                 @click="openModal(project)" >
               <div class=" xl:w-[450px] lg:w-[450px] md:w-[450px] sm:w-screen w-screen bg-cover h-96" :style="{backgroundImage: 'url(' + project.img +')'}"></div>
               <div class="absolute bg-zinc-900 opacity-25 to-cyan-600  h-full left-0 bottom-0 right-0"></div>
               <div
@@ -45,6 +54,7 @@ const { data } = storeToRefs(project)
                 </div>
               </div>
             </div>
+          </template>
         </div>
       </div>
     </div>
