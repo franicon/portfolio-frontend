@@ -21,7 +21,7 @@ const { data } = storeToRefs(project);
       <div class=" top-0 xl:w-2/6 lg:w-3/6 md:w-4/6 w-full border-b-gray-500 px-8 border-b rounded-t-md mx-auto left-0 right-0 py-2 bg-zinc-900 shadow-y-2xl shadow-white">
         <div class="text-xs font-light flex justify-between items-center">
           <div class=" cursor-pointer text-zinc-300" @click="toggleModal">Back ot projects</div>
-          <div class="bg-zinc-700 text-white px-2 py-1 rounded cursor-pointer hover:bg-zinc-800 duration-300" @click="toggleModal">
+          <div class="bg-zinc-700 text-white px-2 py-1 rounded cursor-pointer hover:bg-zinc-800 duration-300" @keydown.esc="toggleModal">
             Close
           </div>
         </div>
