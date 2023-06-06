@@ -2,10 +2,10 @@
 import {storeToRefs} from "pinia";
 import { projects } from "@/_mock/Projects";
 import ProjectStacks from "@/components/shared/ProjectStacks.vue";
+import {ref} from "vue";
 
 import { useModalStore } from "@/stores/modal";
 import { useProjectStore } from "@/stores/project";
-import {ref} from "vue";
 import type {projectType} from "@/types";
 
 const store = useModalStore();
