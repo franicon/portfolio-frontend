@@ -3,7 +3,6 @@ import {storeToRefs} from "pinia";
 import {useModalStore} from '@/stores/modal';
 import { useProjectStore } from "@/stores/project";
 import ProjectStacks from "@/components/shared/ProjectStacks.vue";
-import {ref} from "vue";
 
 
 const modal = useModalStore();
@@ -12,19 +11,18 @@ const {isOpen} = storeToRefs(modal);
 
 const  project = useProjectStore();
 const { data } = storeToRefs(project);
-// const projectData = ref(data)
 
 </script>
 
 <template>
-  <div class="w-screen fixed h-screen z-50  backdrop-blur ease-in-out transition-all" v-show="isOpen">
+  <section class="w-screen fixed h-screen z-50 backdrop-blur ease-in-out transition-all" v-show="isOpen">
     <div class="flex justify-center flex-col h-screen relative overflow-hidden px-3">
 <!--      border top-->
       <div class=" top-0 xl:w-2/6 lg:w-3/6 md:w-4/6 w-full border-b-gray-500 px-8 border-b rounded-t-md mx-auto left-0 right-0 py-2 bg-zinc-900 shadow-y-2xl shadow-white">
         <div class="text-xs font-light flex justify-between items-center">
-          <div class=" cursor-pointer text-zinc-300" @click="toggleModal">back ot projects</div>
+          <div class=" cursor-pointer text-zinc-300" @click="toggleModal">Back ot projects</div>
           <div class="bg-zinc-700 text-white px-2 py-1 rounded cursor-pointer hover:bg-zinc-800 duration-300" @click="toggleModal">
-            esc
+            Close
           </div>
         </div>
       </div>
@@ -73,5 +71,5 @@ const { data } = storeToRefs(project);
         <div class=""></div>
       </div>
     </div>
-  </div>
+  </section>
 </template>

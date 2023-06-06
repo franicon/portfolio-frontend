@@ -23,7 +23,7 @@ function toggleActive(link:Link) {
         <div class=" mx-auto bg-transparent rounded text-white w-96 p-3 drop-shadow-lg border border-gray-400 text-center ">
           <RouterLink
               :class="link.active ? 'bg-zinc-900': 'px-3 hover:text-zinc-200'"
-              @click="toggleActive(link)" v-for="link in links" :key="link.name" to="/">{{ link.name }}
+              @click="toggleActive(link)" v-for="link in links" :key="link.name" :to="link.route">{{ link.name }}
           </RouterLink>
         </div>
       </div>

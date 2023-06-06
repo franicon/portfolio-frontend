@@ -6,9 +6,25 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: () => import('../views/pages/index.vue')
+      component: () => import('../views/pages/index.vue'),
+      children: [
+        {
+          path: 'about',
+          name: 'about',
+          component: () => import('../components/section/AboutSection.vue')
+        },
+      ]
     },
-  ]
+
+  ],
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: 'smooth'
+      }
+    }
+  },
 })
 
 export default router

@@ -8,7 +8,7 @@ import  ExperienceCard from "@/components/shared/ExperienceCard.vue";
 </script>
 
 <template>
-  <div class="pt-52 relative w-full">
+  <section class="pt-52 relative w-full">
     <div class="md:text-5xl text-start text-4xl bg-gradient-to-r from-purple-200 via-zinc-50 to-cyan-100 inline-block text-transparent bg-clip-text font-bold">
       About Me
     </div>
@@ -18,7 +18,7 @@ import  ExperienceCard from "@/components/shared/ExperienceCard.vue";
       </div>
       <div class="text-white relative w-full xl:max-w-2xl lg:max-w-4xl md:max-w-3xl sm:max-w-lg xl:mx-0 md:mx-auto sm:mx-auto">
         <div class="stack-wrapper">
-          <StackCard :render="stakcsData" />
+          <StackCard :render="stakcsData"/>
         </div>
     </div>
     </div>
@@ -62,6 +62,6 @@ import  ExperienceCard from "@/components/shared/ExperienceCard.vue";
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
 </template>
