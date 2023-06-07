@@ -17,7 +17,7 @@ import ProjectsSection from "@/components/section/ProjectsSection.vue";
         <AboutSection id="about"/>
         <ProjectsSection id="projects"/>
         <FooterSection id="contact"/>
-        <footer class="text-center text-white text-sm">
+        <footer class="text-center text-white text-sm font-light mt-10">
           Build & Design by Abayomi Aluko &copy; 2022
         </footer>
       </div>
