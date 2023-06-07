@@ -30,14 +30,14 @@ import  ExperienceCard from "@/components/shared/ExperienceCard.vue";
               <div>
                 <div class="grid xl:grid-cols-3 lg:grid-cols-2 ml-5 md:gap-6 gap-5 items-start">
                   <div class="">
-                    <h2 class="text-xl font-semibold">My Practices</h2>
-                    <p class="max-w-sm pt-2">Here few techniques/approach i take into consideration when build or working on a project.</p>
+                    <h2 class="md:text-xl text-lg font-semibold">My Practices</h2>
+                    <p class="max-w-sm pt-2 ">Here few techniques/approach i take into consideration when build or working on a project.</p>
                   </div>
                   <div v-for="feature in features" :key="feature.title" class="feat-card">
                     <div class="">
                       <div class="dot -left-7 pt-5 xl:hidden lg:hidden"></div>
-                      <div class="text-[16px] font-semibold xl:pb-0 lg:pb-0 pb-4"> {{feature.title}} </div>
-                      <p class="font-normal text-zinc-400 md:text-[13px] text-[12px]">
+                      <div class="md:text-[16px] text-[15px] font-semibold xl:pb-0 lg:pb-0 pb-4"> {{feature.title}} </div>
+                      <p class="font-normal text-zinc-400 p-text">
                         {{feature.description}}
                       </p>
                     </div>
@@ -49,8 +49,8 @@ import  ExperienceCard from "@/components/shared/ExperienceCard.vue";
         </div>
         <div class="">
           <div class="max-w-3xl mx-auto rounded-xl bg-zinc-700 bg-opacity-10 backdrop-blur-lg mt-11 xl:p-10 p-4 relative overflow-hidden">
-            <h3 class="text-xl font-semibold mb-3 ">Experience</h3>
-            <p class="xl:text-md text-[14px] font-normal text-zinc-300 xl:max-w-xl max-w-full">
+            <h3 class="md:text-xl text-lg font-semibold mb-3 ">Experience</h3>
+            <p class="xl:text-md text-[14px] font-normal text-zinc-300 xl:max-w-xl max-w-full p-text">
               Fast-forward to today I have had the opportunities to work remotely with diverse Company | Brand of different fields:
             </p>
             <div class="mt-6">

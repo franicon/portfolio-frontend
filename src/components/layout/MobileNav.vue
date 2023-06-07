@@ -51,7 +51,7 @@ window.removeEventListener('scroll', manageNav)
       <div v-show="!showNavbar" class="fixed bottom-0 z-20 right-0 left-0 bg-zinc-900 duration-500 sm:w-screen w-full py-4 drop-shadow-xl">
         <div  class=" flex items-center justify-evenly text-xs text-white text-center">
           <div @click="top">
-            <router-link to="/"><img class="h-8" src="@/assets/images/icons/a-logo-w.png" alt="abayomi-aluko"></router-link>
+            <router-link to="/"><img class="h-7" src="@/assets/images/icons/a-logo-w.png" alt="abayomi-aluko"></router-link>
           </div>
           <div class="">
             <RouterLink

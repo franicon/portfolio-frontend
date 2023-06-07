@@ -45,8 +45,8 @@ onBeforeUnmount(() => {})
 window.removeEventListener('scroll', manageNav)
 </script>
 <template>
-  <nav class="relative mb-24">
-    <div  v-if='!showNavbar' class="fixed bg-zinc-900 bg-opacity-60 backdrop-blur border border-zinc-500 left-0 right-0 top-0 hidden md:flex-row md:flex z-30 p-3 max-w-4xl  my-4 mx-auto rounded-full px-6">
+  <nav class="relative md:mb-24">
+    <div  v-if='!showNavbar' class="fixed bg-zinc-900 bg-opacity-60 backdrop-blur border border-zinc-500 left-0 right-0 top-0 hidden md:flex-row md:flex z-30 p-3 lg:max-w-4xl md:max-w-2xl  my-4 mx-auto  px-6">
       <div  class="flex justify-between items-center w-full">
         <div @click="top">
           <router-link to="/"><img class="h-8" src="@/assets/images/icons/a-logo-w.png" alt="abayomi-aluko"></router-link>

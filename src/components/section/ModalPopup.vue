@@ -37,13 +37,13 @@ const { data } = storeToRefs(project);
             <div class="space-y-5">
               <div class="flex justify-between items-center">
                 <div class="">
-                  <h1 class="text-2xl font-bold pt-4 items-center">{{data.title}}</h1>
+                  <h1 class="md:text-2xl text-lg font-bold pt-4 items-center">{{data.title}}</h1>
                 </div>
-                <div class="bg-zinc-800 hover:bg-zinc-700 text-xs px-5 py-2 rounded cursor-pointer">View Site</div>
+               <div class=""><a class="bg-zinc-800 hover:bg-zinc-700 text-xs px-5 py-2 rounded cursor-pointer" :href="'https://' + data.link" target="_blank">View Site</a></div>
               </div>
               <div class="">
                 <h3 class="text-white text-1xl font-semibold">About</h3>
-                <p class="text-[14px] font-normal text-zinc-400">{{data.about}}</p>
+                <p class="p-text font-normal text-zinc-400 mt-2">{{data.about}}</p>
               </div>
               <div class="space-y-2">
                 <h3 class="text-white text-1xl font-semibold">Technologies</h3>
@@ -52,11 +52,8 @@ const { data } = storeToRefs(project);
               <div class="space-y-2 pt-2">
                 <h3 class="text-white text-1xl font-semibold">Features</h3>
                 <div class="flex flex-col text-[13px]  gap-2 flex-wrap text-zinc-400">
-                  <ul class="space-y-1 px-5">
-                    <li class="list-decimal">Api Integration development with Laravel</li>
-                    <li class="list-decimal">Full email support for contact and pricing</li>
-                    <li class="list-decimal">UI design and development of frontend</li>
-                    <li class="list-decimal">Authetication with Laravel Sanctum</li>
+                  <ul class="space-y-1 px-5 p-text">
+                    <li class="list-decimal" v-for="(feature, index) in data.features" :key="index">{{ feature }}</li>
                   </ul>
                 </div>
               </div>
