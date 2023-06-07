@@ -29,9 +29,7 @@ const { data } = storeToRefs(project);
       <div class="xl:w-2/6 lg:w-3/6 md:w-4/6 sm:3/6 xl:h-[85vh] h-[85vh] mx-auto  text-white  px-4 relative overflow-hidden overflow-y-auto bg-gradient-to-tr from-zinc-900 via-zinc-900 to-cyan-950">
         <div class="px-4 py-4">
           <div class="bg-video">
-            <video class="bg-video__content" autoplay muted loop>
-              <source src="@/assets/images/cheetah.mp4" type="video/mp4">
-            </video>
+            <video class="bg-video__content h-full w-full" :src="data.video" type="video/mp4"  controls muted loop></video>
           </div>
           <div class="py-2">
             <div class="space-y-5">

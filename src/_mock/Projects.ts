@@ -3,6 +3,7 @@ import type {projectType} from "@/types"
 export  const projects: projectType[] = [
     {
         link: 'www.valuexpa.com',
+        video: 'https://res.cloudinary.com/dzcnkcjzx/video/upload/v1686140398/valuexpa_c0msye.mp4',
         img: 'https://res.cloudinary.com/dzcnkcjzx/image/upload/v1685986638/porfolio/valuexpa_caborb.png',
         slug: 'website build for a finance company',
         title: 'ValueXPA',
@@ -12,6 +13,7 @@ export  const projects: projectType[] = [
     },
     {
         link: 'www.danvicas.com',
+        video: 'https://res.cloudinary.com/dzcnkcjzx/video/upload/v1686140398/valuexpa_c0msye.mp4',
         img: 'https://res.cloudinary.com/dzcnkcjzx/image/upload/v1685986663/porfolio/danvicas_uc1ilt.png',
         slug: 'website build for a finance company',
         title: 'Danvicas',
@@ -21,6 +23,7 @@ export  const projects: projectType[] = [
     },
     {
         link: 'coin-42.netlify.app',
+        video: 'https://res.cloudinary.com/dzcnkcjzx/video/upload/v1686140398/valuexpa_c0msye.mp4',
         img: 'https://res.cloudinary.com/dzcnkcjzx/image/upload/v1685986619/porfolio/crypto_vgcawp.png',
         slug: 'website build for a finance company',
         title: 'Coin24',
@@ -30,6 +33,7 @@ export  const projects: projectType[] = [
     },
     {
         link: 'snazzy-biscotti-24c7a6.netlify.app',
+        video: 'https://res.cloudinary.com/dzcnkcjzx/video/upload/v1686140398/valuexpa_c0msye.mp4',
         img: 'https://res.cloudinary.com/dzcnkcjzx/image/upload/v1685986610/porfolio/auth_vzrjdy.png',
         slug: 'website build for a finance company',
         title: 'Auth with JWT',
@@ -39,6 +43,7 @@ export  const projects: projectType[] = [
     },
     {
         link: 'calm-manatee-7778e3.netlify.app',
+        video: 'https://res.cloudinary.com/dzcnkcjzx/video/upload/v1686140398/valuexpa_c0msye.mp4',
         img: 'https://res.cloudinary.com/dzcnkcjzx/image/upload/v1685986621/porfolio/shifta_cwaaog.png',
         slug: 'website build for a finance company',
         title: 'ShiftA',
@@ -48,6 +53,7 @@ export  const projects: projectType[] = [
     },
     {
         link: 'splendid-kangaroo-2cbbc4.netlify.app',
+        video: 'https://res.cloudinary.com/dzcnkcjzx/video/upload/v1686140398/valuexpa_c0msye.mp4',
         img: 'https://res.cloudinary.com/dzcnkcjzx/image/upload/v1685986620/porfolio/clipboard_vjhyry.png',
         slug: 'website build for a finance company',
         title: 'Clipboard',

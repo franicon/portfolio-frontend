@@ -5,6 +5,11 @@ import AboutSection from "@/components/section/AboutSection.vue";
 import BannerSection from "@/components/section/BannerSection.vue";
 import FooterSection from "@/components/section/FooterSection.vue";
 import ProjectsSection from "@/components/section/ProjectsSection.vue";
+
+import {ref} from "vue";
+const d = ref (new Date());
+let year = d.value.getFullYear();
+
 </script>
 
 <template>
@@ -18,7 +23,7 @@ import ProjectsSection from "@/components/section/ProjectsSection.vue";
         <ProjectsSection id="projects"/>
         <FooterSection id="contact"/>
         <footer class="text-center text-white md:text-[13px] text-[12px] font-light mt-16 mb-3">
-          Build & Design by Abayomi Aluko &copy; 2022
+          Build & Design by Abayomi Aluko &copy; 2022 - {{ year }}
         </footer>
       </div>
     </div>
