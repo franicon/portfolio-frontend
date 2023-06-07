@@ -16,11 +16,11 @@ const links: routeType[] = [
         route: '/#contact',
         active: false
     },
-    {
-        name: 'Resume',
-        route: '/#resume',
-        active: false
-    }
+    // {
+    //     name: 'Resume',
+    //     route: '/#resume',
+    //     active: false
+    // }
 ]
 
 export { links }
