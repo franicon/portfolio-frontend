@@ -58,7 +58,7 @@ window.removeEventListener('scroll', manageNav)
                 :class="link.active ? 'font-semibold my-5 text-white mx-4': 'mx-4 my-5 hover:text-white'"  @click="toggleActive(link)" v-for="link in routeLinks" :key="link.name" :to="link.route">{{ link.name }}
             </RouterLink>
           </div>
-          <div class="cursor-pointer px-4 hover:text-zinc-200"><a href="./public/abayomi-francis-aluko-resume.pdf" target="_blank">Resume</a></div>
+          <div class="cursor-pointer px-4 hover:text-zinc-200"><a href="/abayomi-francis-aluko-resume.pdf" target="_blank">Resume</a></div>
         </div>
       </div>
     </div>
