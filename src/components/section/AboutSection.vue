@@ -31,7 +31,7 @@ import  ExperienceCard from "@/components/shared/ExperienceCard.vue";
                 <div class="grid xl:grid-cols-3 lg:grid-cols-2 ml-5 md:gap-6 gap-5 items-start">
                   <div class="">
                     <h2 class="md:text-xl text-lg font-semibold">My Practices</h2>
-                    <p class="max-w-sm pt-2 ">Here few techniques/approach i take into consideration when build or working on a project.</p>
+                    <p class="max-w-sm pt-2 ">Here are the techniques/approach i take into consideration when build or working on a project.</p>
                   </div>
                   <div v-for="feature in features" :key="feature.title" class="feat-card">
                     <div class="">

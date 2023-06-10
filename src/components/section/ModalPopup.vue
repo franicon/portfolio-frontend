@@ -29,7 +29,8 @@ const { data } = storeToRefs(project);
       <div class="xl:w-2/6 lg:w-3/6 md:w-4/6 sm:3/6 xl:h-[85vh] h-[85vh] mx-auto  text-white  px-4 relative overflow-hidden overflow-y-auto bg-gradient-to-tr from-zinc-900 via-zinc-900 to-cyan-950">
         <div class="px-4 py-4">
           <div class="bg-video">
-            <video class="bg-video__content h-full w-full" :src="data.video" type="video/mp4"  controls muted loop></video>
+<!--            <video class="bg-video__content h-full w-full" :src="data.video" type="video/mp4"  controls muted loop></video>-->
+            <div class="w-full bg-cover bg-center h-96 bg-no-repeat mx-auto" :style="{backgroundImage: 'url(' + data.img +')'}"></div>
           </div>
           <div class="py-2">
             <div class="space-y-5">
@@ -44,11 +45,11 @@ const { data } = storeToRefs(project);
                 <p class="p-text font-normal text-zinc-400 mt-2">{{data.about}}</p>
               </div>
               <div class="space-y-2">
-                <h3 class="text-white text-1xl font-semibold">Technologies</h3>
+                <h3 class="text-white text-1xl font-semibold">Technologies used</h3>
                 <ProjectStacks  :style="'bg-zinc-800 px-3 py-2 font-bold text-zinc-200 rounded'" :stacks="data.stacks"/>
               </div>
               <div class="space-y-2 pt-2">
-                <h3 class="text-white text-1xl font-semibold">Features</h3>
+                <h3 class="text-white text-1xl font-semibold">Principal tasks</h3>
                 <div class="flex flex-col text-[13px]  gap-2 flex-wrap text-zinc-400">
                   <ul class="space-y-1 px-5 p-text">
                     <li class="list-decimal" v-for="(feature, index) in data.features" :key="index">{{ feature }}</li>

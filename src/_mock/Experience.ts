@@ -21,7 +21,7 @@ export const  experience: experienceType[] = [
 
     },
     {
-        url:'www.paychant.com',
+        url:'africanmarketdubai.com',
         company: 'AMD Dubai',
         stacks: ['Figma', 'Photoshop', 'Illustrator'],
         position: 'Product Designer',

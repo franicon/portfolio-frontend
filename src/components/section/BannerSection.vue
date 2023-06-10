@@ -14,10 +14,10 @@
           "> Using my skill-set to help companies build clients & server side applications.  I'm a software engineer who operates in the dynamic making of applications that
             lives on the internet and vocationally design responsive web applications. </h6>
           <div class="flex gap-8 py-4">
-            <a href="" class=""><img class="h-5 " src="@/assets/images/github.png" alt=""></a>
-            <img class="h-5" src="@/assets/images/linkedin.png" alt="">
-            <img class="h-5" src="@/assets/images/telegram.png" alt="">
-            <img class="h-5" src="@/assets/images/twitter.png" alt="">
+            <a href="https://github.com/franicon" target="_blank" class=""><img class="h-5 " src="@/assets/images/github.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/abayomi-aluko-75887b202/" target="_blank"  class=""><img class="h-5" src="@/assets/images/linkedin.png" alt=""></a>
+            <a href="https://t.me/franicons" target="_blank" class=""><img class="h-5" src="@/assets/images/telegram.png" alt=""></a>
+            <a href="https://twitter.com/YomiAluko7" target="_blank"  class=""><img class="h-5" src="@/assets/images/twitter.png" alt=""></a>
           </div>
           <div class="md:h-36 h-16  border-l mt-6 border-zinc-600"></div>
         </div>
