@@ -31,6 +31,9 @@
 .dot {
     @apply absolute h-4 w-4 bg-zinc-900 border-2 rounded-full
 }
+.p-text{
+    @apply md:text-[13px] text-[12px]
+}
 .timeline::before {
     content: '';
     position: absolute;

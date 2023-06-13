@@ -6,8 +6,17 @@ export const useModalStore = defineStore('modal', {
     }),
 
     actions: {
-        toggleModal() {
-            this.isOpen = !this.isOpen;
+        toggleModal: function () {
+            const body = document.querySelector<HTMLElement>('body')
+            if (body) {
+                if (!this.isOpen) {
+                    body.className = 'overflow-y-hidden'
+                    this.isOpen = true
+                } else {
+                    body.className = 'overflow-y-visible'
+                    this.isOpen = false
+                }
+            }
         }
     }
 })

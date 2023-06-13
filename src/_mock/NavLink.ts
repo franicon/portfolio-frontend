@@ -3,24 +3,24 @@ import  type { routeType } from "@/types";
 const links: routeType[] = [
     {
         name: 'About',
-        route: '/about',
+        route: '/#about',
         active: false
     },
     {
         name: 'Projects',
-        route: '/about',
+        route: '/#projects',
         active: false
     },
     {
         name: 'Contact',
-        route: '/about',
+        route: '/#contact',
         active: false
     },
-    {
-        name: 'Resume',
-        route: '/about',
-        active: false
-    }
+    // {
+    //     name: 'Resume',
+    //     route: '/#resume',
+    //     active: false
+    // }
 ]
 
 export { links }
